@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://codeinstages.github.io/drone/bg.png");
+  background-size: 100% center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 67px 184px;
+}
+
+.navLinks { 
+    display: flex; 
+    align-items: center; 
+    gap: 100px; 
+  } 
+  
+  .navLinks li a { 
+    color: #fff; 
+    text-align: center; 
+    font-family: "Poppins"; 
+    font-size: 18px; 
+    font-weight: 500; 
+    transition: 0.3s; 
+  } 
+ 
+  .navLinks li a:hover { 
+    color: #1abc9c; 
+  } 
+
+
+/* body { |-| Início do bloco de declaração para o seletor <body>. Todas as regras dentro destas chaves serão aplicadas ao elemento <body> do documento.
+    background-image: url("bg.png"); |-| Define uma imagem de fundo para o elemento <body> do documento.
+    background-size: 100% center; |-| Configura o tamanho da imagem de fundo para cobrir 100% da largura do elemento e centralizar verticalmente.
+    background-repeat: no-repeat; |-| Impede que a imagem de fundo se repita, garantindo que seja exibida apenas uma vez.
+  } |-| Fim do bloco de declaração para o seletor <body>.
+
+  nav { |-| Início do bloco de declaração para o seletor <nav>. Todas as regras dentro destas chaves serão aplicadas aos elementos <nav> do documento.
+    display: flex; |-| Define um contêiner flexível para os elementos dentro do <nav>, permitindo um layout flexível.
+    justify-content: space-between; |-| Distribui o espaço disponível ao longo do eixo principal do contêiner, colocando o espaço entre os elementos.
+    align-items: center; |-| Centraliza os itens ao longo do eixo transversal do contêiner, no centro verticalmente.
+    padding: 67px 184px; |-| Define espaçamento interno de 67 pixels no topo e na parte inferior, e 184 pixels à esquerda e à direita, dentro do <nav>.
+  } |-| Fim do bloco de declaração para o seletor <nav>.
+
+  .navLinks { |-| Início do bloco de declaração para o seletor .navLinks. Todas as regras dentro destas chaves serão aplicadas aos elementos com a classe .navLinks no documento.
+    display: flex; |-| Define um contêiner flexível para os elementos dentro de .navLinks, permitindo um layout flexível.
+    align-items: center; |-| Centraliza os itens ao longo do eixo transversal do contêiner, no centro verticalmente.
+    gap: 100px; |-| Define o espaçamento entre os itens dentro de .navLinks como 100 pixels.
+  } |-| Fim do bloco de declaração para o seletor .navLinks.
+  |-| 
+  .navLinks li a { |-| Início do bloco de declaração para os links <a> dentro dos itens de lista <li> dentro de .navLinks. Todas as regras dentro destas chaves serão aplicadas aos links <a> nesse contexto específico.
+    color: #fff; |-| Define a cor do texto dos links como branco (#fff).
+    text-align: center; |-| Centraliza o texto dentro dos links.
+    font-family: "Poppins"; |-| Define a família de fontes para os links como "Poppins".
+    font-size: 18px; |-| Define o tamanho da fonte como 18 pixels para os links.
+    font-weight: 500; |-| Define o peso da fonte como 500 para os links (indicando uma fonte de espessura média).
+    transition: 0.3s; |-| Adiciona um efeito de transição de 0.3 segundos para suavizar as mudanças de estilo durante as interações do usuário.
+  } |-| Fim do bloco de declaração para os links <a> dentro dos itens de lista <li> dentro de .navLinks.
+ |-| 
+  .navLinks li a:hover { |-| Define o estado de foco (hover) para os links <a> dentro dos itens de lista <li> dentro de .navLinks. Todas as regras dentro destas chaves serão aplicadas aos links <a> quando o cursor estiver sobre eles.
+    color: #1abc9c; |-| Define a cor do texto dos links como verde claro (#1abc9c) quando o cursor está sobre eles.
+  } |-| Fim do bloco de declaração para os links <a> em estado de foco dentro dos itens de lista <li> dentro de .navLinks.
+
+  main { |-| Início do bloco de declaração para o seletor <main>. Todas as regras dentro destas chaves serão aplicadas ao elemento <main> do documento.
+    display: flex; |-| Define um contêiner flexível para os elementos dentro de <main>, permitindo um layout flexível.
+    flex-direction: column; |-| Alinha os elementos em coluna, um abaixo do outro, dentro de <main>.
+    align-items: center; |-| Centraliza os itens ao longo do eixo transversal do contêiner, no centro verticalmente.
+    gap: 16px; |-| Define o espaçamento vertical entre os elementos como 16 pixels.
+  } |-| Fim do bloco de declaração para o seletor <main>.
+
+  .mainTitle { |-| Início do bloco de declaração para o seletor .mainTitle. Todas as regras dentro destas chaves serão aplicadas aos elementos com a classe .mainTitle no documento.
+    color: #fff; |-| Define a cor do texto como branco (#fff).
+    text-align: center; |-| Centraliza o texto dentro dos elementos com a classe .mainTitle.
+    font-family: "Poppins"; |-| Define a família de fontes como "Poppins".
+    font-size: 36px; |-| Define o tamanho da fonte como 36 pixels.
+    font-weight: 500; |-| Define o peso da fonte como 500 (indicando uma fonte de espessura média).
+  } |-| Fim do bloco de declaração para o seletor .mainTitle.
+
+  .mainDescription { |-| Início do bloco de declaração para o seletor .mainDescription. Todas as regras dentro destas chaves serão aplicadas aos elementos com a classe .mainDescription no documento.
+    color: #969696; |-| Define a cor do texto como cinza (#969696).
+    text-align: center; |-| Centraliza o texto dentro dos elementos com a classe .mainDescription.
+    font-family: "Poppins"; |-| Define a família de fontes como "Poppins".
+    font-size: 18px; |-| Define o tamanho da fonte como 18 pixels.
+    font-weight: 300; |-| Define o peso da fonte como 300 (indicando uma fonte mais leve).
+  } |-| Fim do bloco de declaração para o seletor .mainDescription.
+
+  .button { |-| Início do bloco de declaração para o seletor .button. Todas as regras dentro destas chaves serão aplicadas aos elementos com a classe .button no documento.
+    background: #2e4dec; |-| Define a cor de fundo como azul (#2e4dec).
+    border-radius: 30px; |-| Define um raio de borda de 30 pixels, criando cantos arredondados para o botão.
+    color: #fff; |-| Define a cor do texto como branco (#fff).
+    text-align: center; |-| Centraliza o texto dentro dos elementos com a classe .button.
+    font-family: "Poppins"; |-| Define a família de fontes como "Poppins".
+    font-size: 18px; |-| Define o tamanho da fonte como 18 pixels.
+    font-weight: 600; |-| Define o peso da fonte como 600 (indicando uma fonte de espessura média).
+    padding: 11px 58px; |-| Define o espaçamento interno do botão, com 11 pixels no topo/baixo e 58 pixels à esquerda/direita.
+    width: 200px; |-| Define a largura do botão como 200 pixels.
+    height: 50px; |-| Define a altura do botão como 50 pixels.
+    transition: 0.3s; |-| Adiciona um efeito de transição de 0.3 segundos para suavizar as mudanças de estilo durante as interações do usuário.
+  } |-| Fim do bloco de declaração para o seletor .button.
+  
+  .button:hover { |-| Define o estado de foco (hover) para os elementos com a classe .button. Todas as regras dentro destas chaves serão aplicadas aos elementos .button quando o cursor estiver sobre eles.
+    background-color: #1abc9c; |-| Define a cor de fundo como verde claro (#1abc9c) quando o cursor está sobre os elementos .button.
+  } |-| Fim do bloco de declaração para os elementos .button em estado de foco (hover).
+     */
